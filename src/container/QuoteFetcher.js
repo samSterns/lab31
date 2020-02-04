@@ -17,7 +17,7 @@ export default class QuoteFetcher extends Component {
     
       fetch = () => {
         return getQuote()
-        .then(quote => this.setState({ quote }));
+        // .then(quote => this.setState({ quote }));
       }
 
 
@@ -27,7 +27,7 @@ export default class QuoteFetcher extends Component {
         return (
         <>
             <Quote {...quote} />
-            <Button text="Get a new one" onClick={this.fetch} />
+            {/* <Button text="Get a new one" onClick={this.fetch} /> */}
         </>
         );
     }
